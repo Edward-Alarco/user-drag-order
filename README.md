@@ -25,13 +25,14 @@ user-drag-order/
 └── assets/
     └── js/
         └── admin-drag-order.js
+```
 
 ---
 
 ## 🖱 How to Use
 
 1. Go to:
-wp-admin → Users
+   wp-admin → Users
 
 2. Make sure users are ordered by `user_order`:
 
@@ -50,3 +51,4 @@ $members = get_users([
     'orderby' => 'user_order',
     'order'   => 'ASC',
 ]);
+```
