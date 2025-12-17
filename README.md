@@ -22,6 +22,9 @@ The order is saved in the real `user_order` column of `wp_users`, making it reli
 ```text
 user-drag-order/
 ├── user-drag-order.php
+├── includes/
+│   ├── class-user-drag-order.php
+│   └── user-order-query.php
 └── assets/
     └── js/
         └── admin-drag-order.js
@@ -31,8 +34,7 @@ user-drag-order/
 
 ## 🖱 How to Use
 
-1. Go to:
-   wp-admin → Users
+1. Go to: wp-admin → Users
 
 2. Make sure users are ordered by `user_order`:
 
