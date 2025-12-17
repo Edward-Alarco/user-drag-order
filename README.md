@@ -25,6 +25,7 @@ user-drag-order/
 ├── includes/
 │   ├── class-user-drag-order.php
 │   └── user-order-query.php
+│   └── plugin-links.php
 └── assets/
     └── js/
         └── admin-drag-order.js

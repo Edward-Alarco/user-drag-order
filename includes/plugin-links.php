@@ -2,8 +2,7 @@
 
 add_filter('plugin_row_meta', function ($links, $file) {
 
-    // Asegúrate de apuntar SOLO a tu plugin
-    if ($file !== plugin_basename(__FILE__)) {
+    if ($file !== plugin_basename(UDO_PLUGIN_FILE)) {
         return $links;
     }
 
