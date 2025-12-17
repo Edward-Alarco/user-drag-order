@@ -19,11 +19,12 @@ The order is saved in the real `user_order` column of `wp_users`, making it reli
 
 ## 🧱 Folder Structure
 
+```text
 user-drag-order/
 ├── user-drag-order.php
 └── assets/
-└── js/
-└── admin-drag-order.js
+    └── js/
+        └── admin-drag-order.js
 
 ---
 
