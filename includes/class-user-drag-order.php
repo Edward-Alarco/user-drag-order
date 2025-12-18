@@ -13,6 +13,22 @@ class User_Drag_Order
         add_action('admin_head', [$this, 'admin_styles']);
     }
 
+    public static function ensure_user_order_column()
+    {
+        global $wpdb;
+
+        $table = $wpdb->users;
+        $column = $wpdb->get_var(
+            $wpdb->prepare("SHOW COLUMNS FROM `$table` LIKE %s", 'user_order')
+        );
+
+        if ($column) {
+            return;
+        }
+
+        $wpdb->query("ALTER TABLE `$table` ADD COLUMN `user_order` INT(11) NOT NULL DEFAULT 0");
+    }
+
     public function enqueue_assets($hook)
     {
         if ($hook !== 'users.php') {
