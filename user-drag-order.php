@@ -2,11 +2,12 @@
 
 /**
  * Plugin Name: User Drag Order
- * Description: Drag & drop ordering for WordPress users using wp_users.user_order
+ * Description: Drag & drop ordering for WordPress users.
  * Version: 1.0.0
  * Author: Edward Alarco
- * Author URI: https://edward-alarco.github.io/edwardalarco/
  * License: GPL v2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: user-drag-order
  */
 
 if (!defined('ABSPATH')) exit;
